@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10%;
+    background-color:cornsilk;
+}
+div.logo{
+    font-size:1.5rem;
+    color:blue;
+    
+}
+
+div.logo p{
+    font-size: medium;
+    color: palevioletred
+}
+ul.nav-links {
+    display: flex;
+    list-style: none;
+}
+ul.nav-links li {
+    padding: 0px 20px;
+}
+ul.nav-links li a{
+    text-decoration: none;
+    transition: all 0.1s ease 0s;
+    color:palevioletred;
+    font-size: 1.1rem;
+}
+ul.nav-links li a:hover{
+    color: blue;
+}
+a.nav-btn{
+    text-decoration: none;
+    padding:2.5px 15px;
+    background:palevioletred;
+    color: cornsilk;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.1s ease 0s;
+
+}
+a.nav-btn:hover{
+    background:blueviolet;
+}
+
+section#hero{
+    padding: 8em;
+    background: cornsilk;
+}
+div.hero-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+div.hero-header h2{
+    font-size: 3.5rem;
+    color: blue;
+    font-weight: 700;
+}
+div.hero-header p{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+div.hero-header button{
+    padding: 0.7rem;
+    margin: 1rem;
+    background:palevioletred ;
+    color: wheat;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div.hero-header button:hover{
+    background: blueviolet;
+}
+
+div.hero-image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.hero-image img{
+    width: 450px;
+    height: 360px;
+    position: relative;
+    top: -40px;
+}
+section#business{
+    padding: 7em;
+    background-color: cornsilk;
+}
+div.header-business{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+div.header-business h3{
+    text-align: center;
+    color: blue;
+    font-size: 3.0rem;
+}
+div.grid{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding-top: 2em;
+    
+}
+div.business-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+div.card1{
+    padding: 10px 25px;
+    width: 300px;
+    height: 250px;
+    background: cornsilk;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+div.card1 h3{
+    color:palevioletred;
+    text-align: center;
+
+}
+div.card1 p{
+    color:black;
+    padding: 1em;
+}
+ul.nav-link {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: rosybrown;
+}
+ul.nav-link li {
+    padding: 2rem 2rem;
+}
+ul.nav-link li p{
+    color:brown;
+}
+ul.nav-link li a{
+    text-decoration: none;
+    transition: all 0.1s ease 0s;
+    color: blue;
+    font-size: 1.1rem;
+}
+ul.nav-link li a:hover{
+    color:red;
+}
+div.media{
+    background-color: rosybrown;
+}
+div.media li{
+    list-style: none;
+    margin:10px, 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding:20px 20px;
+    color:blue;
+    border: 1px solid rosybrown;
+    border-radius: 50%;
+    transition: 1s;
+}
+div.media li:hover{
+    color: red;
+}
+div.media p{
+    color: brown;
+    font-size: medium;
+    padding-top: 1em;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    div.logo{
+        font-size: 2.5rem;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: cornsilk;
+        align-items: flex-start;
+    }
+    div.logo p {
+        font-size: medium;
+    }
+    ul.nav-links{
+        display: block;
+    }
+ul.nav-links li{
+    margin: 7px;
+}
+    div.logo {
+        font-size: 2.5rem;
+    }
+    div.hero-image img {
+        width: 300px;
+        height: 360px;
+    
+    }
+    div.hero-header h2 {
+        font-size: 1.8rem;
+    }
+    div.hero-header p {
+        font-size: 1rem;
+    
+    }
+    div.hero-header p{
+        font-size: 1.5rem;
+        margin: 2rem;
+}
+section#hero{
+    padding: 5em;
+}
+
+div.hero-content{
+    display: flex;
+    flex-direction: column-reverse;
+}
+section#business{
+    padding: 3rem;
+}
+div.header-business h3{
+    font-size: 2rem;
+}
+div.grid{
+    display: block;
+
+}
+div.media{
+    background-color: rosybrown;
+}
+div.media li{
+    display:block ;
+}
+
+}
+
+
+
+
+
+
